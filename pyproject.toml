@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "edu-drf"
+version = "0.1.0"
+description = ""
+authors = ["Анатолий Шаповалов <anatoly.shapovalov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "edu_drf"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.2.4"
+pillow = "^10.0.0"
+psycopg2-binary = "^2.9.7"
+djangorestframework = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
