@@ -7,9 +7,9 @@ NULLABLE = {'blank': True, 'null': True}
 class User(AbstractUser):
     username = None
     email = models.EmailField(unique=True, verbose_name='почта')
-    phone = models.CharField(max_length=25, unique=True, verbose_name='телефон')
+    phone = models.CharField(max_length=35, unique=True, verbose_name='телефон')
     city = models.CharField(max_length=50, verbose_name='город', **NULLABLE)
-    avatar = models.ImageField(verbose_name='фото', **NULLABLE)
+    avatar = models.ImageField(upload_to='users/', verbose_name='фото', **NULLABLE)
     # first_name = models.CharField(max_length=150, verbose_name='имя', **NULLABLE)
     # last_name = models.CharField(max_length=150, verbose_name='фамилия')
     # is_staff = models.BooleanField(default=False, verbose_name='персонал')
