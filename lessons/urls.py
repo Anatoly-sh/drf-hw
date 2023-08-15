@@ -7,5 +7,5 @@ urlpatterns = [
     path('detail/<int:pk>/', LessonDetailView.as_view(), name='lessons-detail'),
     path('create/', LessonCreateView.as_view(), name='lessons-create'),
     path('update/<int:pk>/', LessonUpdateView.as_view(), name='lessons-update'),
-    path('delete/', LessonDeleteView.as_view(), name='lessons-delete'),
+    path('delete/<int:pk>/', LessonDeleteView.as_view(), name='lessons-delete'),
 ]
